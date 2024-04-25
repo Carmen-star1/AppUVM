@@ -1,0 +1,48 @@
+{code_content}
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+export default function App() {
+return (
+<View style={styles.container}>
+<Text>Hola, realizaremos un Whatsapp business para tema de quejas en clientes y consumidores</Text>
+<StatusBar style="auto" />
+</View>
+);
+}
+const styles = StyleSheet.create({
+container: {
+flex: 1,
+backgroundColor: '#00ff00', //changed this line to green color
+alignItems: 'center',
+justifyContent: 'center',
+},
+});
+//added two functions to print welcome and order messages
+const printWelcome = () => {
+console.log("Bienvenido a nuestro Whatsapp business");
+console.log("Indique el producto con el cual necesita ayuda");
+
+};
+const printOrder = (product, quantity) => {
+console.log(`Su pedido es: ${product} x ${quantity}`);
+};
+justifyContent: 'center',
+},
+});
+
+//added a function to send a complaint message
+const sendComplaint = (product, problem) => {
+console.log(`Estamos recibiendo su queja sobre el producto ${product}`);
+console.log(`Por favor describa el problema que tiene con el producto ${problem}`);
+//TODO: implement logic to handle the complaint and respond accordingly
+};
+justifyContent: 'center',
+},
+});
+//added a variable to store the report number
+const reportNumber = 123456;
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
